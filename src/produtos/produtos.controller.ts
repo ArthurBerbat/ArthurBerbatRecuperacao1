@@ -31,4 +31,10 @@ export class ProdutosController {
   remove(@Param('id') id: string) {
     return this.produtosService.remove(+id);
   }
+
+  @Get()
+  async getProducts() {
+  return this.produtosService.getAllProducts();
+}
+
 }
