@@ -27,7 +27,7 @@ export class CarrinhoController {
     return this.carrinhoService.update(+id, updateCarrinhoDto);
   }
 
-  @Delete(':id')
+  @Delete('remover :id')
   remove(@Param('id') id: string) {
     return this.carrinhoService.remove(+id);
   }

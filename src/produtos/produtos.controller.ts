@@ -34,7 +34,7 @@ export class ProdutosController {
 
   @Get()
   async getProducts() {
-  return this.produtosService.getAllProducts();
+  return this.produtosService.findAll();
 }
 
 }
